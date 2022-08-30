@@ -1,13 +1,13 @@
 LABORATORIO 3 - PBT
 ===
 
-# CLASES DE EQUIVALENCIA
+## CLASES DE EQUIVALENCIA
 
-### CREAR UN PROYECTO CON MAVEN
+#### CREAR UN PROYECTO CON MAVEN
 * Dados los requerimientos se crea el proyecto
-    * ![1](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/1.png)
+    * \ ![1](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/1.png)
 
-## Actualizar y crear dependencias en el proyecto
+### Actualizar y crear dependencias en el proyecto
 
 * Busque en internet el repositorio central de maven. \
     [https://search.maven.org//](https://search.maven.org/)
@@ -20,3 +20,11 @@ LABORATORIO 3 - PBT
         ![3](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/3.png)
     * Hay que cambiar la versión del compilador de Java a la versión 8, para ello, agregue la sección properties antes de la sección de dependencias: \
         ![4](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/4.png)
+
+#### COMPILAR Y EJECUTAR
+
+* Ejecute los comandos necesarios de Maven, para compilar el proyecto y verificar que el proyecto se creó correctamente y los cambios realizados al archivo pom no generan inconvenientes. \
+    ![5](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/5.png)
+
+* Busque el comando requerido para ejecutar las pruebas unitarias de un proyecto desde Maven y ejecútelo sobre el proyecto. Se debe ejecutar la claseAppTest con resultado exitoso. \
+    ![6](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/6.png)
