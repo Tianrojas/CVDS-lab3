@@ -55,7 +55,34 @@ Se usará la clase de persona que ya fue creada. El servicio de la registradirí
 ##### FINALIZAR EL EJERCICIO
 
 * Piense en los casos de equivalencia que se pueden generar del ejercicio para la registraduría, dadas las condiciones. Deben ser al menos 5.
-    * Se creara un caso de equivalencia para cada estado (DEAD, UNDERAGE, INVALID_AGE, VALID, DUPLICATED) evaluandolos sujetos a los parametros de entrada del constructor `Person()`.
-* 
+    * Clases de equivalecia: \
+        * Para el estado DEAD, hay 2 para el paramentro `alive` en Person: basicamente true o false.
+        * Para el estado UNDERAGE, hay 2 para el paramentro `age` en Person: [0, 18] y [18, +inf]
+        * Para el estado INVALID_AGE, hay 3 para el paramentro `age` en Person: [-inf, 0), [0, inf] y param no Entero
+        * Para el estado VALID, hay 2 en Person: El primero en el que todas las variables son adecuadas para Person y el que no las cumple.
+        * Para el estado DUPLICATED, hay 2 en Person: registro de Person nueva y duplicado.
+    * Se creara un caso de equivalencia para cada estado (DEAD, UNDERAGE, INVALID_AGE, VALID, DUPLICATED) evaluandolos sujetos a los parametros de entrada del constructor `Person()`. 
+    
+* Complete la implementación de la clase `RegistryTest.java` con (al menos) un método por cada clase de equivalencia, creandodiferentes personas y validando que el resultado sea el esperado. \
+    ![9](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/9.png) \
+    ![10](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/10.png)
+
+*   Complete la implementación del método registerVoter en la clase `Registry.java` para retornar el resultado esperado según la entrada. \
+    ![11](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/11.png) \
+    ![12](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/12.png)
+
+#### EJERCICIO "DESCUENTO DE TARIFAS"
+##### REALIZAR DISEÑO DE PRUEBAS
+* Respuestas del documento terminadas y adjuntas en el entregable.
+
+##### IMPLEMENTACIÓN DE LAS PRUEBAS
+* Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto. Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando. ``` $ mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar ``` \
+    ![13](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/13.png)
+
+* Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado. \
+    ![14](https://github.com/Tianrojas/CVDS-lab3/blob/main/Resourses/14.png)
+
+
+
 
 
